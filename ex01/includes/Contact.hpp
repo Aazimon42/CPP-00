@@ -6,14 +6,14 @@
 /*   By: edi-maio <edi-maio@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 18:58:40 by edi-maio          #+#    #+#             */
-/*   Updated: 2026/04/01 18:51:11 by edi-maio         ###   ########.fr       */
+/*   Updated: 2026/04/01 19:33:42 by edi-maio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CONTACT_HPP
 # define CONTACT_HPP
 
-# include "includes.hpp"
+# include <iostream>
 
 class Contact {
 	public:

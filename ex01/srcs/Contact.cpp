@@ -6,11 +6,11 @@
 /*   By: edi-maio <edi-maio@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 18:06:03 by edi-maio          #+#    #+#             */
-/*   Updated: 2026/03/28 18:26:48 by edi-maio         ###   ########.fr       */
+/*   Updated: 2026/04/01 19:34:17 by edi-maio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/Contact.hpp"
+#include "../includes/includes.hpp"
 
 Contact::Contact(void)
 {

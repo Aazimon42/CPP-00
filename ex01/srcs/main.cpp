@@ -6,13 +6,11 @@
 /*   By: edi-maio <edi-maio@42angouleme.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 18:13:24 by edi-maio          #+#    #+#             */
-/*   Updated: 2026/04/01 19:22:15 by edi-maio         ###   ########.fr       */
+/*   Updated: 2026/04/01 19:34:30 by edi-maio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <cstring>
-#include "../includes/PhoneBook.hpp"
+#include "../includes/includes.hpp"
 
 int	main(void)
 {
