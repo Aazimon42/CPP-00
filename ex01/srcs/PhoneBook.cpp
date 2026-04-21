@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edi-maio <edi-maio@42angouleme.fr>         +#+  +:+       +#+        */
+/*   By: edi-maio <edi-maio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 18:08:47 by edi-maio          #+#    #+#             */
-/*   Updated: 2026/04/01 19:34:40 by edi-maio         ###   ########.fr       */
+/*   Updated: 2026/04/21 14:56:55 by edi-maio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,10 +75,10 @@ void	PhoneBook::search(void)
 	while ((this->index > 7 && i < 8) || i < this->index % 8)
 	{
 		std::cout << std::setfill(' ') << std::right 
-			<< std::setw(10) << contacts[i].index << "|" 
-			<< std::setw(10) << truncate(contacts[i].firstName) << "|" 
-			<< std::setw(10) << truncate(contacts[i].lastName) << "|"
-			<< std::setw(10) << truncate(contacts[i].nickName)
+			<< std::setw(10) << contacts[i].getIndex() << "|" 
+			<< std::setw(10) << truncate(contacts[i].getFirstName()) << "|" 
+			<< std::setw(10) << truncate(contacts[i].getLastName()) << "|"
+			<< std::setw(10) << truncate(contacts[i].getNickName())
 			<< std::endl;
 		i++;
 	}
@@ -98,12 +98,12 @@ void	PhoneBook::search(void)
 				<< std::setw(10) << "secret"
 				<< std::endl;
 			std::cout << std::setfill(' ') << std::right 
-				<< std::setw(10) << contacts[index].index << "|" 
-				<< std::setw(10) << truncate(contacts[index].firstName) << "|" 
-				<< std::setw(10) << truncate(contacts[index].lastName) << "|"
-				<< std::setw(10) << truncate(contacts[index].nickName) << "|"
-				<< std::setw(10) << truncate(contacts[index].phone) << "|"
-				<< std::setw(10) << truncate(contacts[index].secret)
+				<< std::setw(10) << contacts[index].getIndex() << "|" 
+				<< std::setw(10) << truncate(contacts[index].getFirstName()) << "|" 
+				<< std::setw(10) << truncate(contacts[index].getLastName()) << "|"
+				<< std::setw(10) << truncate(contacts[index].getNickName()) << "|"
+				<< std::setw(10) << truncate(contacts[index].getPhone()) << "|"
+				<< std::setw(10) << truncate(contacts[index].getSecret())
 				<< std::endl;
 		}
 		else

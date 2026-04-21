@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edi-maio <edi-maio@42angouleme.fr>         +#+  +:+       +#+        */
+/*   By: edi-maio <edi-maio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 18:58:40 by edi-maio          #+#    #+#             */
-/*   Updated: 2026/04/01 19:33:42 by edi-maio         ###   ########.fr       */
+/*   Updated: 2026/04/21 14:56:03 by edi-maio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,22 @@
 # include <iostream>
 
 class Contact {
+	private:
+		int	index;
+		std::string	firstName;
+		std::string	lastName;
+		std::string	nickName;
+		std::string	phone;
+		std::string	secret;
 	public:
-	int	index;
-	std::string	firstName;
-	std::string	lastName;
-	std::string	nickName;
-	std::string	phone;
-	std::string	secret;
-	Contact(int index, std::string firstName, std::string lastName, std::string nickName, std::string phone, std::string secret);
-	Contact(void);
+		Contact(int index, std::string firstName, std::string lastName, std::string nickName, std::string phone, std::string secret);
+		Contact(void);
+		int getIndex(void) const;
+		std::string getFirstName(void) const;
+		std::string getLastName(void) const;
+		std::string getNickName(void) const;
+		std::string getPhone(void) const;
+		std::string getSecret(void) const;
 };
 
 #endif
